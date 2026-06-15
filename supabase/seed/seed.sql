@@ -1,0 +1,2 @@
+﻿-- Seed data for development
+-- insert into profiles (id, full_name) values (...);

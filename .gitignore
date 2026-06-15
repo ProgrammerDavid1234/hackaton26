@@ -1,0 +1,33 @@
+﻿# Dependencies
+node_modules/
+__pycache__/
+*.pyc
+venv/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Build outputs
+dist/
+build/
+.next/
+*.log
+
+# IDE
+.vscode/
+.idea/
+.DS_Store
+
+# ML
+*.h5
+*.pkl
+data/raw/
+data/processed/
+
+# Secrets
+*.pem
+*.key
+credentials.json
+serviceAccount.json

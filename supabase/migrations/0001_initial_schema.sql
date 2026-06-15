@@ -1,0 +1,8 @@
+﻿-- Initial schema
+-- Add your tables here
+-- Example:
+-- create table profiles (
+--   id uuid references auth.users on delete cascade primary key,
+--   full_name text,
+--   created_at timestamp with time zone default now()
+-- );
