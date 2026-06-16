@@ -1,25 +1,27 @@
-import React from 'react'
-import AiAssistant from '../components/Ai Assistant'
-import Sidebar from '../components/Sidebar'
-import Timetable from '../components/Timetable'
-import CampusGuide from '../components/CampusGuide'
-import Announcements from '../components/Announcements'
-import Profile from '../components/Profile'
+// frontend/src/pages/Dashboard.jsx
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+import DashboardLayout from "../layout/DashboardLayout";
+import Home from "../components/home";
+import AiAssistant from "../components/AiAssistant";
+import Timetable from "../components/timetable";
+import CampusGuide from "../components/CampusGuide";
+import Announcements from "../components/announcements";
+import Profile from "../components/profile";
 
 const Dashboard = () => {
   return (
-    <div className="flex">
-      <Sidebar />
-      <main className="flex-1 p-6">
-        <h1 className="text-2xl font-bold mb-4">Dashboard</h1>
-        <AiAssistant />
-        <Timetable />
-        <CampusGuide />
-        <Announcements />
-        <Profile />
-      </main>
-    </div>
-  )
-}
+    <DashboardLayout>
+      <Routes>
+        <Route index element={<Home />} />
+        <Route path="chat" element={<AiAssistant />} />
+        <Route path="timetable" element={<Timetable />} />
+        <Route path="navigator" element={<CampusGuide />} />
+        <Route path="announcements" element={<Announcements />} />
+        <Route path="profile" element={<Profile />} />
+      </Routes>
+    </DashboardLayout>
+  );
+};
 
-export default Dashboard
+export default Dashboard;
