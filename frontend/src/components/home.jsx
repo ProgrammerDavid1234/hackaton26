@@ -9,7 +9,7 @@ import {
   Clock,
   ChevronRight,
 } from "lucide-react";
-import { useAuth } from "../context/AuthContext";
+// import { useAuth } from "../context/AuthContext";
 import { supabase } from "../lib/supabase";
 
 const StatCard = ({ icon: Icon, label, value, color, sub }) => (
@@ -28,7 +28,7 @@ const StatCard = ({ icon: Icon, label, value, color, sub }) => (
 );
 
 export default function Home() {
-  const { profile } = useAuth();
+  // const { profile } = useAuth();
   const [stats, setStats] = useState({
     chats: 0,
     resources: 0,
@@ -98,11 +98,11 @@ export default function Home() {
       <div className="bg-gradient-to-r from-blue-600 to-indigo-600 rounded-2xl p-6 text-white">
         <p className="text-blue-100 text-sm font-medium">{greeting} 👋</p>
         <h1 className="text-2xl font-bold mt-1">
-          {profile?.full_name || "Welcome back"}
+          {/* {profile?.full_name || "Welcome back"} */}
         </h1>
         <p className="text-blue-100 text-sm mt-1 capitalize">
-          {profile?.role || "Student"} ·{" "}
-          {profile?.department || "CampusMind University"}
+          {/* {profile?.role || "Student"} ·{" "}
+          {profile?.department || "CampusMind University"} */}
         </p>
         <div
           className="mt-4 flex items-center gap-2 bg-white/20 backdrop-blur rounded-xl px-4 py-2.5 max-w-md cursor-pointer hover:bg-white/30 transition-colors"

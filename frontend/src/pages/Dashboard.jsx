@@ -9,7 +9,7 @@ import CampusGuide from "../components/CampusGuide";
 import Announcements from "../components/announcements";
 import Profile from "../components/profile";
 
-const Dashboard = () => {
+export default function Dashboard() {
   return (
     <DashboardLayout>
       <Routes>
@@ -23,5 +23,3 @@ const Dashboard = () => {
     </DashboardLayout>
   );
 };
-
-export default Dashboard;

@@ -1,20 +1,3 @@
-// import React from 'react'
-// import { Link } from 'react-router-dom'
-// const Landing = () => {
-//     return (
-//         <div className="flex flex-row gap-5">
-//             <h1 className="text-2xl font-bold">Landing</h1>
-//             {/* <div> */}
-//             <Link to="/login">
-//                 <button className="bg-green-500 text-white p-3">Login</button>
-//             </Link>
-            
-//         </div>
-
-//     )
-// }
-
-// export default Landing
 import React, { useEffect, useState, useRef } from "react";
 import { Link } from "react-router-dom";
 import {
@@ -47,12 +30,6 @@ import {
   Bookmark,
   CheckCircle2,
 } from "lucide-react";
-
-/**
- * Landing — CampusMind AI marketing page
- * A campus-first landing page. Not a generic AI demo.
- * Stack: React + react-router-dom + framer-motion + lucide-react + Tailwind.
- */
 
 const COLORS = {
   bg: "#F0F7FA",
